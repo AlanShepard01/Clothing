@@ -1,0 +1,16 @@
+# Настройка роутинга
+# Настройка маршрутов
+RewriteEngine On
+
+# C clothing.php на clothing
+RewriteRule ^clothing$ clothing.php [L]
+RewriteRule ^sign$ sign.php [L]
+RewriteRule ^api/sign$ system/sign.php [L]
+RewriteRule ^api/add/cart$ system/add.cart.php [L]
+RewriteRule ^api/delete/cart$ system/delete.cart.php [L]
+RewriteRule ^logout$ logout.php [L]
+RewriteRule ^cart$ cart.php [L]
+RewriteRule ^admin/api/add/clothes$ system/admin.add.php [L]
+RewriteRule ^admin/api/delete/clothes$ system/admin.delete.php [L]
+RewriteRule ^add/cart$ system/add.cart.php [L]
+RewriteRule ^delete/cart$ system/delete.cart.php [L]
